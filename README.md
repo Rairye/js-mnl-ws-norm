@@ -15,7 +15,7 @@ console.log("'A' is white space: " + isWhiteSpace("A"));
 console.log("'\\n' is white space: " + isWhiteSpace("\n"));
 ```
 
-function isLineBreak(char)
+## function isLineBreak(char)
 
 returns true if char is a line break.
 
