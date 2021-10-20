@@ -1,5 +1,14 @@
 # js-mnl-ws-norm
 
+## Installation
+
+1. Download the tgz file
+2. In the project directory, excute:
+
+npm install mnl-ws-norm-1.0.0.tgz
+
+1. Download contents of 
+
 Light-weight tool for normalizing whitespace and accurately tokenizing words. Multiple natural languages supported. Useful for scrapping, machine learning, and data analysis.
 
 ## function isWhiteSpace(char)
@@ -118,3 +127,7 @@ console.log(normSpaces(sourceStr, " ", true));
 //Spaces in source_str are replaced with a full-width space (Unicode: U+3000), and extra spaces are removed.
 console.log(normSpaces(sourceStr, "　", true));
 ```
+
+# Other languages
+
+1. Python -> https://github.com/Rairye/mnl-ws-norm
