@@ -102,7 +102,7 @@ Specifying removeExtraSpaces as true removes extra whitespace characters from in
 Note: Regardless of the value of removeExtraSpaces, the returned string may have leading/trailing whitespace characters, so you may want to use the trim() method as necessary.
 
 ```javascript
-import { normSpaces } from 'mnl-ws-norm';
+import {normSpaces} from 'mnl-ws-norm';
 
 //Source string with consecutive half-width spaces (Unicode: U+0020) and a tab (Unicode: U+0009).
 var sourceStr = "  Hey,  everybody, 	how  are  you  doing?  ";
