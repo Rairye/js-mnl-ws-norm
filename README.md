@@ -1,15 +1,13 @@
 # js-mnl-ws-norm
 
+Light-weight tool for normalizing whitespace and accurately tokenizing words. Multiple natural languages supported. Useful for scrapping, machine learning, and data analysis.
+
 ## Installation
 
 1. Download the tgz file
 2. In the project directory, excute:
 
 npm install mnl-ws-norm-1.0.0.tgz
-
-1. Download contents of 
-
-Light-weight tool for normalizing whitespace and accurately tokenizing words. Multiple natural languages supported. Useful for scrapping, machine learning, and data analysis.
 
 ## function isWhiteSpace(char)
 
