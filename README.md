@@ -39,7 +39,6 @@ Note: This function splits inputStr by all whitespace characters (spaces, line b
 ```javascript
 import {splitBySpaces} from 'mnl-ws-norm';
 
-
 //Source string 1 with half-width spaces (Unicode: U+0020) and a tab (Unicode: U+0009).
 var sourceStr1 = "Hey, everybody,  how are you doing?";
 
@@ -104,8 +103,6 @@ Note: Regardless of the value of removeExtraSpaces, the returned string may have
 
 ```javascript
 import { normSpaces } from 'mnl-ws-norm';
-
-
 
 //Source string with consecutive half-width spaces (Unicode: U+0020) and a tab (Unicode: U+0009).
 var sourceStr = "  Hey,  everybody, 	how  are  you  doing?  ";
