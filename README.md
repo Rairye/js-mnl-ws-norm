@@ -64,7 +64,7 @@ console.log("sourceStr2: " + splitBySpaces(sourceStr2).join("-"));
 console.log("sourceStr3: " + splitBySpaces(sourceStr3).join("-"));
 ```
 
-## function splitBySpaces(inputStr, removeExtraSpaces = false)
+## function splitByLines(inputStr, removeExtraSpaces = false)
 
 Required parameter -> inputStr
 
