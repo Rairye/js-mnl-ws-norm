@@ -13,7 +13,7 @@ npm install mnl-ws-norm-1.0.0.tgz
 
 returns true if char is a whitespace character.
 
-char must be passed as a string.
+char must be passed as a string with a length of 1.
 
 ```javascript
 import {isWhiteSpace} from 'mnl-ws-norm';
@@ -28,7 +28,7 @@ console.log("'\\n' is white space: " + isWhiteSpace("\n"));
 
 returns true if char is a line break.
 
-char must be passed as a string type.
+char must be passed as a string with a length of 1.
 
 ```javascript
 import {isLineBreak} from 'mnl-ws-norm';
