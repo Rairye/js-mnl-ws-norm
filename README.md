@@ -4,10 +4,7 @@ Light-weight tool for normalizing whitespace and accurately tokenizing words. Mu
 
 ## Installation
 
-1. Download the tgz file
-2. In the project directory, excute:
-
-npm install mnl-ws-norm-1.0.0.tgz
+npm install mnl-ws-norm
 
 ## function isWhiteSpace(char)
 
