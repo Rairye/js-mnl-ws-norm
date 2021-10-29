@@ -1,6 +1,6 @@
 {
   "name": "mnl-ws-norm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "description": "Light-weight tool for normalizing whitespace, splitting lines, and accurately tokenizing words (no regex). Multiple natural languages supported.",
   "main": "index.js",

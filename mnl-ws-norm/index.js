@@ -122,7 +122,7 @@ export function normSpaces(inputStr, spaceType, removeExtraSpaces = false) {
         return inputStr;
 	}
     
-    var result = "";
+    var result = [];
     var lastCategory = "";
 	var lastReplacement = null;
 	var stringLength = inputStr.length;
@@ -133,7 +133,7 @@ export function normSpaces(inputStr, spaceType, removeExtraSpaces = false) {
 
         if (currentCategory == "SPACE") {
             if ((lastCategory == "SPACE" && removeExtraSpaces == false) || lastCategory != "SPACE") {
-                result+=(inputStr.substring(lastReplacement == null ? 0 : lastReplacement + 1, i) + spaceType);
+                result.push((inputStr.substring(lastReplacement == null ? 0 : lastReplacement + 1, i) + spaceType));
 			}
 
 			lastReplacement = i;
@@ -150,15 +150,15 @@ export function normSpaces(inputStr, spaceType, removeExtraSpaces = false) {
 	}
 	
 	if (lastReplacement < stringLength - 1) {
-        result+=(inputStr.substring(lastReplacement+1));
+        result.push(inputStr.substring(lastReplacement+1));
 	
 	}
 
 	if (removeExtraSpaces == false) {
-		return result;
+		return result.join("");
 	}
 	
-    return trimResult(result);
+    return trimResult(result.join(""));
 	
 }
 
