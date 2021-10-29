@@ -124,25 +124,36 @@ export function normSpaces(inputStr, spaceType, removeExtraSpaces = false) {
     
     var result = "";
     var lastCategory = "";
-
-    for (var i = 0; i < inputStr.length; i++) {
+	var lastReplacement = null;
+	var stringLength = inputStr.length;
+	
+    for (var i = 0; i < stringLength; i++) {
         var currentChar = inputStr.charAt(i);
         var currentCategory = getCategory(currentChar);
 
         if (currentCategory == "SPACE") {
             if ((lastCategory == "SPACE" && removeExtraSpaces == false) || lastCategory != "SPACE") {
-                result+=spaceType;
+                result+=(inputStr.substring(lastReplacement == null ? 0 : lastReplacement + 1, i) + spaceType);
 			}
 
+			lastReplacement = i;
 			lastCategory = currentCategory;
 			continue;
 
 		}
         lastCategory = currentCategory;
-        result+=currentChar;
     
 	}
 	
+	if (lastReplacement == null) {
+		return inputStr;
+	}
+	
+	if (lastReplacement < stringLength - 1) {
+        result+=(inputStr.substring(lastReplacement+1));
+	
+	}
+
 	if (removeExtraSpaces == false) {
 		return result;
 	}

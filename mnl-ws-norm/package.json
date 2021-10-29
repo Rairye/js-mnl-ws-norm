@@ -1,13 +1,19 @@
 {
   "name": "mnl-ws-norm",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
-  "description": "Light-weight tool for normalizing whitespace, splitting lines, and accurately tokenizing words. Multiple natural languages supported.",
+  "description": "Light-weight tool for normalizing whitespace, splitting lines, and accurately tokenizing words (no regex). Multiple natural languages supported.",
   "main": "index.js",
-  "type": "module",
+  "keywords": ["whitespace", "normalization", "line", "splitting", "noregex"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rairye",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/Rairye/js-mnl-ws-norm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rairye/js-mnl-ws-norm"
+  }
+  
 }
