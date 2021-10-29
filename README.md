@@ -1,6 +1,6 @@
 # js-mnl-ws-norm
 
-Light-weight tool for normalizing whitespace and accurately tokenizing words. Multiple natural languages supported. Useful for scrapping, machine learning, and data analysis.
+Light-weight tool for normalizing whitespace and accurately tokenizing words (no regex). Multiple natural languages supported. Useful for scrapping, machine learning, and data analysis.
 
 ## Installation
 
